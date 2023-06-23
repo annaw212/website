@@ -63,3 +63,12 @@
     background-color: lightsteelblue;
     text-align: center;
 }
+iframe {
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+    border-style:none;
+}
+html {
+    scroll-padding-top: 65px; /* height of sticky header */
+}
