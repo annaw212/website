@@ -1,12 +1,6 @@
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
+const hamburger = document.querySelector('.hamburger');
+const navLink = document.querySelector('.nav__link');
 
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarDark');
-    }
-    else {
-        header.classList.remove('navbarDark');
-    }
-}
+hamburger.addEventListener('click', () => {
+    navLink.classList.toggle('hide');
+});
