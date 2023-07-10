@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html class="sl-root static developers mz-history mz-svg mz-localstorage mz-csspositionsticky mz-supports mz-cssanimations mz-backgroundsize mz-no-cssgridlegacy mz-cssgrid mz-flexbox mz-csstransforms mz-csstransforms3d mz-csstransitions mz-fullscreen mz-webpanimation loaded ua-linux ua-chrome has-visible-scrollbars fonts-are-ready" data-account="" lang="en"><head>
+  <meta charset="utf-8">
+
+  <title>Developers – Slides</title>
+  <meta name="description" content="Slides is a place for creating, presenting and sharing modern presentations. Sign up for free.">
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <meta name="theme-color" content="#2f2f33">
+
+  <meta property="og:title" content="Developers – Slides">
+  <meta property="og:description" content="Slides is a place for creating, presenting and sharing modern presentations. Sign up for free.">
+  <meta property="og:site_name" content="Slides">
+  <meta property="og:image" content="https://static.slid.es/logo/slides-logo-495x479.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://slides.com/developers">
+  <meta property="fb:app_id" content="146002942236376">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="canonical" href="https://slides.com/developers">
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" data-application-font="inter">
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" data-application-font="inter">
+</noscript>
+
+  <link rel="stylesheet" media="all" href="//assets-v2.slid.es/assets/slides/slides-9c25ece2476c8bf5a292aee738b856615560afa562b87317c421312b668451c1.css">
+  <link rel="stylesheet" media="all" href="//assets-v2.slid.es/assets/application-6c959db545b699d1f9380a677647881577c61117d78351772f8d6fb1aefb4ab8.css">
+  
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ILHImKOqL/p9aF9yrLA+/9+kQTxVOC0yxIcPPdvExk9vPl5IZXUsOYfuzrDfnpKCBS9gCp9OBJHESxIfA4P1zQ==">
+  <script type="application/javascript" async="" defer="" src="https://by2.uservoice.com/t2/147810/web/track.js?_=1688690374514&amp;s=0&amp;c=__uvSessionData0&amp;d=eyJlIjp7InUiOiJodHRwczovL3NsaWRlcy5jb20vZGV2ZWxvcGVycyIsInIiOiJodHRwczovL2xhYi5oYWtpbS5zZS8ifX0%3D"></script><script type="text/javascript" async="" src="//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LWVDH9STBJ"></script>
+<script type="text/javascript">
+if( navigator.doNotTrack !== '1' && !/dnt=1/.test( window.location.search ) ) {
+  window.slidesMeasurementId = 'G-LWVDH9STBJ';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LWVDH9STBJ', {
+    page_title: 'static-developers'
+  });
+
+}
+</script>
+
+    <link rel="stylesheet" media="all" href="//assets-v2.slid.es/assets/highlight-themes-232f18e5c08c3b3e63545dfcc8e37d46fce04fe60f23db68d78d350bc78b55d1.css">
+
+<style type="text/css"></style><style type="text/css" media="screen">.uv-icon{box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-icon .uv-tooltip-container{position:relative}.uv-icon .uv-tooltip-container .uv-icon-tooltip{display:none;position:absolute;height:20px;padding:4px 8px;background-color:#464653;color:white;font-size:12px;border-radius:4px;line-height:18px;font-family:"Open Sans", sans-serif;white-space:nowrap}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left,.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{top:0;bottom:0;margin:auto 10px}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top,.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{transform:translate(-30%);margin:10px auto}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top{bottom:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{top:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left{right:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{left:100%}.uv-icon .uv-tooltip-container:hover .uv-icon-tooltip{display:block}.uv-icon-trigger{display:block;width:39px;height:39px;border:none;padding:0;cursor:pointer;background:none}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{border-radius:5px;background:white;border:1px solid transparent;position:relative;width:325px;height:325px;transition:background 200ms}.uv-bottom .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{transition:none !important}.uv-fade{opacity:1;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{transform:translateY(100%)}.uv-slide-left.uv-is-hidden{transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{transform:translateX(100%)}
+</style><style></style></head>
+<body>
+  
+  <div id="container" class="container">
+    
+
+<header class="global-header">
+<div class="wrapper">
+  <div class="slides-logo logo-animation open">
+    <a class="symbol" href="/" aria-label="Go to the Slides homepage">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="box-3"></div>
+    </a>
+    <a class="word" href="/" aria-label="Go to the Slides homepage"></a>
+  </div>
+  <div class="nav-wrapper">
+      <ul class="nav nav-full">
+        <li class="nav-item " data-page-id="home/explore">
+          <a class="nav-item-anchor" href="/explore"><span class="nav-item-label wide">Presentations</span></a>
+        </li>
+        <li class="nav-item " data-page-id="home/templates">
+          <a class="nav-item-anchor" href="/templates"><span class="nav-item-label wide">Templates</span></a>
+        </li>
+        <li class="nav-item " data-page-id="home/features">
+          <a class="nav-item-anchor" href="/features"><span class="nav-item-label">Features</span></a>
+        </li>
+        <li class="nav-item " data-page-id="marketing/teams">
+          <a class="nav-item-anchor" href="/for-teams"><span class="nav-item-label wide">Teams</span></a>
+        </li>
+        <li class="nav-item " data-page-id="static/pricing">
+          <a class="nav-item-anchor" href="/pricing?h=1"><span class="nav-item-label">Pricing</span></a>
+        </li>
+        <li class="nav-item-divider hide-in-overlay-menu"></li>
+        <li class="nav-item hide-in-overlay-menu" data-page-id="sessions/new">
+          <a class="nav-item-anchor" href="/users/sign_in"><span class="nav-item-label">Log in</span></a>
+        </li>
+        <li class="nav-item hide-in-overlay-menu nav-item-highlighted">
+          <a class="nav-item-anchor" href="/pricing"><span class="nav-item-label">Sign up</span></a>
+        </li>
+      </ul>
+      <ul class="nav nav-compact">
+        <li class="nav-item" data-page-id="sessions/new">
+          <a class="nav-item-anchor" href="/users/sign_in"><span class="nav-item-label">Log in</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-anchor" href="/pricing"><span class="nav-item-label">Sign up</span></a>
+        </li>
+        <li class="nav-item menu-button nav-item-highlighted">
+          <button class="nav-item-anchor">
+            <span class="nav-item-label wide">Menu</span>
+            <svg class="menu-arrow" viewBox="0 0 20 20" width="18" height="18" style="vertical-align: middle;">
+              <path fill="currentColor" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+  </div>
+</div>
+</header>
+
+
+    
+    <div id="main" class="main has-page-nav" role="main">
+      
+
+
+
+<nav class="sl-page-nav" data-type="scroll">
+<ul>
+  <li class="selected">
+    <a class="sl-scroll-anchor" href="#intro">Intro</a>
+  </li>
+  <li class="selected">
+    <a class="sl-scroll-anchor" href="#syntax-highlighting">Syntax Highlighted Code</a>
+    <ul>
+      <li class=""><a class="sl-scroll-anchor" href="#syntax-highlighting-lines">Line Highlights</a></li>
+    </ul>
+  </li>
+  <li class="">
+    <a class="sl-scroll-anchor" href="#developer-mode">Developer Mode</a>
+    <ul>
+      <li class=""><a class="sl-scroll-anchor" href="#developer-mode-edit-html">Edit HTML</a></li>
+      <li class=""><a class="sl-scroll-anchor" href="#developer-mode-element-classes">Element Classes</a></li>
+      <li class=""><a class="sl-scroll-anchor" href="#developer-mode-slide-classes">Slide Classes</a></li>
+      <li class=""><a class="sl-scroll-anchor" href="#developer-mode-export-html">Export HTML</a></li>
+    </ul>
+  </li>
+  <li>
+    <a class="sl-scroll-anchor" href="#css-editor">CSS Editor</a>
+  </li>
+  <li>
+    <a class="sl-scroll-anchor" href="#define-api">Define API: Create Prefilled Decks</a>
+    <ul>
+      <li><a class="sl-scroll-anchor" href="#define-api-request">The Request</a></li>
+      <li><a class="sl-scroll-anchor" href="#define-api-json-example">Deck JSON Example</a></li>
+      <li><a class="sl-scroll-anchor" href="#define-api-json-spec">Deck JSON Spec</a></li>
+    </ul>
+  </li>
+</ul>
+<svg class="sl-page-nav-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg"><path stroke="#444" stroke-width="2" fill="transparent" stroke-dasharray="1, 0, 50, 463" stroke-linecap="round" stroke-linejoin="round" d="M 4 18 L 4 39 L 4 47 L 4 68 L 4 75 L 24 75 L 24 96 L 24 104 L 4 104 L 4 125 L 4 132 L 24 132 L 24 153 L 24 161 L 24 182 L 24 189 L 24 210 L 24 217 L 24 238 L 24 246 L 4 246 L 4 267 L 4 275 L 4 296 L 4 303 L 24 303 L 24 324 L 24 331 L 24 352 L 24 360 L 24 381" stroke-dashoffset="1" opacity="1"></path></svg></nav>
+
+<div class="column wide-l">
+<section id="intro">
+  <h2>Slides for Developers</h2>
+  <p>
+    We strive to make Slides a great and flexible tool for developers. Presentations created on Slides are HTML documents under the hood, so generally anything that HTML can do, Slides can do. We make it easy to access and edit the underlying HTML and CSS through the <a href="#developer-mode">Developer Mode</a>.
+  </p>
+  <p>
+    There's also an API for creating new presentations with preset content and we're aiming to add additional APIs in the future.
+  </p>
+</section>
+
+<section id="syntax-highlighting">
+  <h2>Syntax Highlighted Code</h2>
+  <p>
+    Slides is the best presentation tool out there when it comes to presenting and showing code. Highlighting is provided for all common languages and you can pick from multiple different highlight themes.
+  </p>
+  <img class="developer-image" src="https://static.slid.es/site/developers/slides-language-theme.gif">
+  <div id="syntax-highlighting-lines">
+    <h3>Line Highlights</h3>
+    <p>
+      You can emphasize specific lines of code to direct the audience's attention. Multiple code highlight steps can be added and stepped through for the same code block. An empty highlight step means that no code is highlighted.
+    </p>
+    <img class="developer-image" src="https://static.slid.es/site/developers/slides-line-highlights.gif">
+  </div>
+</section>
+
+<section>
+  <div id="developer-mode">
+    <h2>Developer Mode</h2>
+    <p>
+      The Slides editor has a developer mode which is useful if you know a bit of HTML and CSS. With this mode active you will be able to modify the underlying HTML of your deck, allowing you to make adjustments that the Slides editor does not provide interface options for.
+    </p>
+    <p>
+      To enable the developer mode open the editor settings in the bottom left corner:
+    </p>
+  </div>
+
+  <img class="developer-image" src="https://static.slid.es/site/developers/slides-developer-mode-1v2.png">
+
+  <div id="developer-mode-edit-html">
+    <h3>Editing HTML</h3>
+    <p>
+      The per-slide HTML editor can be accessed from the slide options area. It gives you raw access to the current slide's HTML, allowing you to change anything you like. Note that some elements, such as &lt;script&gt; and &lt;link&gt;, are not allowed for security reasons.﻿
+    </p>
+
+    <img class="developer-image" src="https://static.slid.es/site/developers/slides-developer-mode-2.png">
+  </div>
+
+  <div id="developer-mode-element-classes">
+    <h3>Element Classes <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h3>
+    <p>
+      As a paying Slides customer you have access to the <a href="#css-editor">CSS editor</a> which allows you to add custom styles to your deck. By turning on the developer mode a new "class name" field will appear for any block that you focus. This allows you to easily target a specific element with your CSS.
+    </p>
+    <p>
+      Here's an example that defines an "upside-down" class using custom CSS and applies it to a text block.
+    </p>
+    <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css language-css"><span class="hljs-selector-class">.upside-down</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>( <span class="hljs-number">1</span>, -<span class="hljs-number">1</span> );
+}</code></pre>
+
+    <img class="developer-image" src="https://static.slid.es/site/developers/slides-developer-mode-3.png">
+  </div>
+
+  <div id="developer-mode-slide-classes">
+    <h3>Slide Classes <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h3>
+    <p>
+      Just like you can add custom classes to individual elements it's also possible to add custom classes at the slide level. This can used to apply broader changes to the whole slide like inverting text and icon colors or changing the slide transition.
+    </p>
+    <img class="developer-image" src="https://static.slid.es/site/developers/slides-developer-mode-4v3.png">
+    <p>
+      Under the hood the slide background element is separate from the slide itself. Here are two examples showing how you'd target the slide contents or slide background using a custom class called "night-sky":
+    </p>
+
+    <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css language-css">// Targets the slide contents
+<span class="hljs-selector-class">.slides</span> <span class="hljs-selector-class">.night-sky</span> svg path {
+  fill: yellow;
+}
+
+// Target the slide <span class="hljs-attribute">background</span>
+<span class="hljs-selector-class">.backgrounds</span> <span class="hljs-selector-class">.night-sky</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-number">0deg</span>, <span class="hljs-number">#141528</span>, <span class="hljs-number">#0b1bb2</span>);
+}</code></pre>
+
+    <img class="developer-image" src="https://static.slid.es/site/developers/slides-developer-mode-5.png">
+  </div>
+
+  <div id="developer-mode-export-html">
+    <h3>Export HTML</h3>
+    <p>
+      You can access the complete HTML for all slides in your deck ﻿inside of the export panel, under "Export to reveal.js"﻿. This provides a way of exporting your deck markup and the core Slides styles to reveal.js. There are a few limitations with exporting this way but it should provide a good starting point.
+    </p>
+
+    <img class="developer-image" src="https://static.slid.es/site/developers/slides-developer-mode-6.png">
+  </div>
+
+</section>
+
+<section id="css-editor">
+  <h2>CSS Editor <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h2>
+  <p>
+    The CSS editor lets you author custom styles for your presentation with a real-time preview of the result. It's available as an option inside of the Style panel of the presentation editor.
+  </p>
+  <p>
+    The editor preprocesses styles using <a href="http://lesscss.org/">LESS</a>, though you're free to write plain CSS as well. We apply the styles in real-time as you type so there's no need to leave the editor or even press a refresh button to see what you're getting. Note that when your styles are saved they will be automatically wrapped in a ".reveal {}" selector to avoid conflicts with other page styles.
+  </p>
+  <h4>Custom Fonts</h4>
+  <p>
+    You can load custom fonts from Typekit and Google fonts and apply them using custom CSS. <a href="http://help.slides.com/knowledgebase/articles/1077976-custom-fonts-pro">Find out more</a>.
+  </p>
+  <h4>Developer Mode</h4>
+  <p>
+    If you turn on the <a href="#developer-mode">developer mode</a> you can also add custom classes to any focused element. This is a convenient way to easily apply your CSS to specific elements.
+  </p>
+
+  <h4>Examples</h4>
+  <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css language-css">// Change presentation progress bar <span class="hljs-attribute">color</span>
+<span class="hljs-selector-class">.progress</span> <span class="hljs-selector-tag">span</span> {
+<span class="hljs-attribute">background</span>: <span class="hljs-number">#ff0000</span>;
+}
+
+// Change control arrow <span class="hljs-attribute">color</span>
+<span class="hljs-selector-class">.controls</span> <span class="hljs-selector-tag">button</span> {
+<span class="hljs-attribute">color</span>: <span class="hljs-number">#ff0000</span>;
+}
+
+// Change presentation <span class="hljs-attribute">background</span>
+&amp; {
+<span class="hljs-attribute">background</span>: <span class="hljs-number">#a83239</span>;
+}
+
+// Change <span class="hljs-attribute">color</span> of <span class="hljs-selector-tag">body</span> text
+<span class="hljs-selector-class">.slides</span> {
+<span class="hljs-attribute">color</span>: <span class="hljs-number">#009999</span>;
+}
+
+// Turn text white if the slide has <span class="hljs-selector-tag">a</span> dark <span class="hljs-attribute">background</span>
+<span class="hljs-selector-class">.has-dark-background</span> {
+<span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+}
+
+// Larger slide numbers (if slide numbers are enabled for the deck)
+<span class="hljs-selector-class">.slide-number</span> {
+<span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+}
+
+// Add <span class="hljs-selector-tag">a</span> blue <span class="hljs-attribute">border</span> <span class="hljs-selector-tag">to</span> <span class="hljs-attribute">all</span> slides (each slide is <span class="hljs-selector-tag">a</span> &lt;<span class="hljs-selector-tag">section</span>&gt;)
+<span class="hljs-selector-class">.slides</span> <span class="hljs-selector-tag">section</span> {
+<span class="hljs-attribute">outline</span>: <span class="hljs-number">1px</span> solid blue;
+}
+
+// Add <span class="hljs-selector-tag">a</span> red <span class="hljs-attribute">border</span> <span class="hljs-selector-tag">to</span> <span class="hljs-attribute">all</span> vertical stacks of slides
+<span class="hljs-selector-class">.slides</span> <span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.stack</span> {
+<span class="hljs-attribute">outline</span>: <span class="hljs-number">1px</span> solid red;
+}
+
+// Include <span class="hljs-selector-tag">a</span> custom <span class="hljs-attribute">font</span>
+<span class="hljs-keyword">@font-face</span> {
+<span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Cabin Sketch"</span>;
+<span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"https://static.slid.es/fonts/cabinsketch/cabinsketch-regular.woff"</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">"woff"</span>)
+}
+
+<span class="hljs-selector-class">.slides</span> <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-class">.slides</span> <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-class">.slides</span> <span class="hljs-selector-tag">h3</span> {
+<span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Cabin Sketch"</span>;
+}</code></pre>
+
+<p>Here's where you can access the CSS editor from inside of the Style panel:</p>
+<img class="developer-image" src="https://static.slid.es/site/developers/slides-css-editor-1.png">
+
+<p>A screenshot of the editor:</p>
+﻿<img class="developer-image" src="https://static.slid.es/site/developers/slides-css-editor-2.png">
+
+</section>
+
+<section>
+  <div id="define-api">
+    <h2>Define API: Create Prefilled Decks <span class="header-secondary-text">(beta)</span></h2>
+    <p>
+      The define API lets you create a presentation programatically and add it to the current user's Slides account. Presentations you create can include any of the content types that the Slides editor supports. You can even include live data from other sites via iframes.
+    </p>
+    <p>
+      For example, if you operate a web-based charting service, you can let your users create a presentation containing their fully interactive charts at the click of a button.
+    </p>
+    <p>
+      If the user isn't already signed in to Slides, they will automatically be prompted to authenticate or sign up. Once signed in, they are able to review the deck and confirm that they want to save it to their account. Here's what that process looks like:
+    </p>
+    <img class="developer-image outline" src="https://static.slid.es/site/developers/slides-define-api-flow.gif?1">
+  </div>
+
+  <div id="define-api-request">
+    <h3>The Request</h3>
+    <p>
+      To start the process you'll need to have the user submit an HTML form towards the <code class="code-inline">http://slides.com/decks/define</code> endpoint. The form needs to contain an input field with the name <code class="code-inline">definition</code> and the value of this input should be the <a href="#define-api-json-example">JSON representation of a deck</a>. Once the form is submitted, we'll automatically redirect the user to the appropriate page.
+    </p>
+    <table class="key-value-table">
+      <tbody><tr>
+        <td>Request Method</td>
+        <td><code>POST</code></td>
+      </tr>
+      <tr>
+        <td>Request URL</td>
+        <td><code>https://slides.com/decks/define</code></td>
+      </tr>
+      <tr>
+        <td>Request Payload</td>
+        <td><code>definition: DECK_JSON_HERE</code></td>
+      </tr>
+    </tbody></table>
+    <p>
+      Here's a fully working example:
+    </p>
+    <iframe height="300" scrolling="no" src="//codepen.io/hakimel/embed/preview/b13f1e7b62e5b44aa64f83d041e431ab/?height=300&amp;theme-id=13307&amp;default-tab=html,result&amp;embed-version=2&amp;editable=true" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+    </iframe>
+  </div>
+
+  <div id="define-api-json-example">
+    <h3>Deck JSON Examples</h3>
+    <p>
+      Here's the bare minimum JSON you'll need to describe a deck.
+    </p>
+    <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs json language-json"><span class="hljs-punctuation">{</span>
+<span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"My Deck"</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"slides"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+  <span class="hljs-punctuation">{</span> <span class="hljs-attr">"html"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"&lt;h1&gt;Slide 1&lt;/h1&gt;"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-punctuation">{</span> <span class="hljs-attr">"html"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"&lt;h1&gt;Slide 2&lt;/h1&gt;"</span> <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span></code></pre>
+    <p>
+      If you want to group multiple slides into one vertical stack you can nest them in an array:
+    </p>
+    <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs json language-json"><span class="hljs-punctuation">{</span>
+<span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"My Deck"</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"slides"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+  <span class="hljs-punctuation">{</span> <span class="hljs-attr">"markdown"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"# Slide 1"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-punctuation">[</span>
+      <span class="hljs-punctuation">{</span> <span class="hljs-attr">"markdown"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"# Vertical Slide 2.1"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-punctuation">{</span> <span class="hljs-attr">"markdown"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"# Vertical Slide 2.2"</span> <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-punctuation">{</span> <span class="hljs-attr">"markdown"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"# Slide 3"</span> <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span></code></pre>
+    <p>
+      The following JSON demonstrates most of the available options.
+    </p>
+    <p>
+      Note that there are three different ways to define slide content, <strong>blocks</strong>, <strong>HTML</strong> and <strong>Markdown</strong>. The benefit of using content blocks is that the elements you define are separately editable inside of the Slides editor. If you specify content as a string of HTML or Markdown, it will all be grouped into one element and edited as a text box.
+    </p>
+    <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs json language-json"><span class="hljs-punctuation">{</span>
+<span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"My Deck"</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"description"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Description of My Deck."</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"width"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1024</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"height"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">576</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"auto-slide-interval"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"slide-number"</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">false</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"loop"</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">false</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"theme-color"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"white"</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"theme-font"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"overpass"</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"transition"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"slide"</span><span class="hljs-punctuation">,</span>
+<span class="hljs-attr">"slides"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+  <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"an-optional-slide-id"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"background-color"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"#cccccc"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"background-image"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://static.slid.es/images/screenshots/v1/slides-homepage-1440x900.png"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"background-size"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"cover"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"notes"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"My speaker notes"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"blocks"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+      <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"text"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"value"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Hello world!"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"format"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"h2"</span>
+      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"image"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"value"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://static.slid.es/images/screenshots/v1/slides-homepage-1440x900.png"</span>
+      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"iframe"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"value"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://slides.com/news/make-better-presentations/embed"</span>
+      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"table"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+            <span class="hljs-punctuation">[</span><span class="hljs-string">"A"</span><span class="hljs-punctuation">,</span><span class="hljs-string">"B"</span><span class="hljs-punctuation">,</span><span class="hljs-string">"C"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-punctuation">[</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span>  <span class="hljs-number">2</span><span class="hljs-punctuation">,</span>  <span class="hljs-number">3</span> <span class="hljs-punctuation">]</span>
+        <span class="hljs-punctuation">]</span>
+      <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">]</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"background-image"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://static.slid.es/images/screenshots/v1/slides-homepage-1440x900.png"</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"html"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"&lt;h1&gt;HTML Slide&lt;/h1&gt;"</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"markdown"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"**Markdown** slide! &lt;https://daringfireball.net/projects/markdown/syntax&gt;"</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span></code></pre>
+  </div>
+
+  <div id="define-api-json-spec">
+    <h3>Deck JSON Spec</h3>
+    <table class="key-value-table">
+      <tbody><tr>
+        <th style="width: 230px;">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          title
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The title of the presentation. Appears anywhere the deck is listed on slides.com.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          description
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          A short description of the presentation. Appears anywhere the deck is listed on slides.com.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          width
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+          </div>
+        </td>
+        <td>
+          The presentation width in pixels. Defaults to 960. We automatically scale content up or down to fit any display.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          height
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+          </div>
+        </td>
+        <td>
+          The presentation height in pixels. Defaults to 700. We automatically scale content up or down to fit any display.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          visibility
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Determines who this deck is visible to.
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>all</td>
+              <td>Publicly visible to anyone.</td>
+            </tr>
+            <tr>
+              <td>self</td>
+              <td>Only visible to the signed in user. <em>Requires a paid account.</em></td>
+            </tr>
+            <tr>
+              <td>team</td>
+              <td>Only visible to the user's team members. <em>Requires a Team account.</em></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          auto-slide-interval
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Optionally make the presentation auto-slide. This value is defined in milliseconds and defaults to 0 (no autosliding).
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          slide-number
+          <div class="meta">
+            <span class="meta-item meta-string">Boolean</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Flags if a slide number should show the current slide number when viewing the presentations. False by default.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          loop
+          <div class="meta">
+            <span class="meta-item meta-string">Boolean</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Flags if the last slide of the presentation should loop back to the first. False by default.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          theme-color
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Presentation color. Available options:
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>white-blue</td>
+              <td>White background, black text, blue links (default).</td>
+            </tr>
+            <tr>
+              <td>black-blue</td>
+              <td>Black background, white text, blue links.</td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          theme-font
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Presentation fonts. Open the Slides editor "Style" panel for previews. Available options:
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Font style</th>
+            </tr>
+            <tr>
+              <td>montserrat</td>
+              <td>sans-serif (default)</td>
+            </tr>
+            <tr>
+              <td>asul</td>
+              <td>semi-serif</td>
+            </tr>
+            <tr>
+              <td>helvetica</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>josefine</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>league</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>merriweather</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>news</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>opensans</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>overpass</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>palatino</td>
+              <td>serif</td>
+            </tr>
+            <tr>
+              <td>quicksand</td>
+              <td>sans-serif</td>
+            </tr>
+            <tr>
+              <td>sketch</td>
+              <td>Sans-serif</td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          transition
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The transition to use when moving between slides.
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>slide</td>
+              <td>Slide between slides (default).</td>
+            </tr>
+            <tr>
+              <td>none</td>
+              <td>No transition at all.</td>
+            </tr>
+            <tr>
+              <td>fade</td>
+              <td>Fade slides in and out.</td>
+            </tr>
+            <tr>
+              <td>concave</td>
+              <td>Slide between slides with a concave 3D effect.</td>
+            </tr>
+            <tr>
+              <td>convex</td>
+              <td>Slide between slides with a convex 3D effect.</td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          slides
+          <div class="meta">
+            <span class="meta-item meta-string">Array</span>
+          </div>
+        </td>
+        <td>
+          Each record in this array represents a slide. You can group multiple slides in a nested array to create vertical stacks, like this:
+          <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs language-bash">[ <span class="hljs-string">"slide 1"</span>, [<span class="hljs-string">"slide 2.1"</span>, <span class="hljs-string">" slide 2.2"</span> ], <span class="hljs-string">"slide 3"</span> ]</code></pre>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <h4 id="define-api-slides">Slide JSON</h4>
+    <table class="key-value-table">
+      <tbody><tr>
+        <td class="optional" style="min-width: 230px;">
+          <span class="deem">slides.</span>id
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          A unique identifier for the slide. This id can be used used for internal links. Should only contain alphanumerics, dashes, and underscores.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional" style="min-width: 230px;">
+          <span class="deem">slides.</span>background-color
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Slide background color. Supports all CSS color formats, like <code>red</code> or <code>#ff0000</code>.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          <span class="deem">slides.</span>background-image
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          URL to a background image. Supported formats: JPG, PNG, GIF and SVG.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          <span class="deem">slides.</span>background-size
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Controls the sizing of a background image. Options:
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>cover</td>
+              <td>Covers the full page regardless of aspect ratio by allowing cropping (default).</td>
+            </tr>
+            <tr>
+              <td>contain</td>
+              <td>As large as possible without cropping.</td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          <span class="deem">slides.</span>notes
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Plain text speaker notes that will appear when presenting this deck. Maximum length is 10000 characters.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.</span>html
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Custom HTML that should be added to the slide. The HTML will be placed into a content block and centered on the slide. Note that we strip out all scripts, style tags and external stylesheets.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.</span>markdown
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Markdown content that should be added to the slide. The HTML output will be placed in a content block and centered on the slide.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.</span>blocks
+          <div class="meta">
+            <span class="meta-item meta-string">Array</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          An array of content blocks. Blocks are automatically placed in a column at the center of the page.
+        </td>
+      </tr>
+    </tbody></table>
+
+    <h4 id="define-api-blocks">Content Block JSON</h4>
+    <table class="key-value-table">
+      <tbody><tr>
+        <td style="min-width: 230px;">
+          <span class="deem">slides.blocks.</span>type
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The type of content you want to insert.
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>text</td>
+              <td>Multiline text block. <a href="#define-api-text-block">More info</a></td>
+            </tr>
+            <tr>
+              <td>image</td>
+              <td>JPG, PNG, GIF or SVG image. <a href="#define-api-image-block">More info</a></td>
+            </tr>
+            <tr>
+              <td>iframe</td>
+              <td>Embedded web page. <a href="#define-api-iframe-block">More info</a></td>
+            </tr>
+            <tr>
+              <td>code</td>
+              <td>Syntax highlighted code. <a href="#define-api-code-block">More info</a></td>
+            </tr>
+            <tr>
+              <td>table</td>
+              <td>Tabular data. <a href="#define-api-table-block">More info</a></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>x
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The horizontal position of the block in pixels. If this value is not defined, we will automatically place it at the center of the slide.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>y
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The vertical position of the block in pixels. If this value is not defined, we will automatically place it at the center of the slide.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>width
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The width of the content block in pixels.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>height
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The height of the content block in pixels. Note that some blocks, like <a href="#define-api-text-block">text</a>, ignore this value since height is based on how tall the content is.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>class
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          A class name to apply to the underlying HTML element for targeting with custom styles. Must be a valid CSS class name.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>animation-type
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Adds an animation to the content block.
+          <table class="key-value-table">
+            <tbody><tr><th>Values</th></tr>
+            <tr><td>fade-in</td></tr>
+            <tr><td>fade-out</td></tr>
+            <tr><td>slide-up</td></tr>
+            <tr><td>slide-down</td></tr>
+            <tr><td>slide-right</td></tr>
+            <tr><td>slide-left</td></tr>
+            <tr><td>scale-up</td></tr>
+            <tr><td>scale-down</td></tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>animation-trigger
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Determines which interaction that will trigger the animation. Has no effect unless <code>animation-type</code> is set.
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>auto</td>
+              <td>Animate when the slide becomes visible.</td>
+            </tr>
+            <tr>
+              <td>click</td>
+              <td>Click or tap to click animate.</td>
+            </tr>
+            <tr>
+              <td>hover</td>
+              <td>Hover over the element animate.</td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>animation-duration
+          <div class="meta">
+            <span class="meta-item meta-string">Float</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The number of seconds that the animation should run for.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>animation-delay
+          <div class="meta">
+            <span class="meta-item meta-string">Float</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The number of seconds to wait before running the animation.
+        </td>
+      </tr>
+    </tbody></table>
+
+    <h4 id="define-api-text-block">Text block</h4>
+    <p>Properties available for the <strong>text</strong> content block.</p>
+    <table class="key-value-table">
+      <tbody><tr>
+        <th style="width: 230px;">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>value
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The string of text to insert.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>format
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The text format, defined as one of the following HTML tags:
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>h1</td>
+              <td>Heading 1</td>
+            </tr>
+            <tr>
+              <td>h2</td>
+              <td>Heading 2</td>
+            </tr>
+            <tr>
+              <td>h3</td>
+              <td>Heading 3</td>
+            </tr>
+            <tr>
+              <td>p</td>
+              <td>Paragraph</td>
+            </tr>
+            <tr>
+              <td>pre</td>
+              <td>Preformatted text</td>
+            </tr>
+          </tbody></table>
+          <p>
+            If no format is specified, we pick a good default based on what other blocks there are on the slide. For example, if you have two text blocks we'll use an h1 for the first block and h2 for the second.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>align
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Left, center, right or justify.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>padding
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The number of pixels to leave empty around the text.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>color
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The color of table text. Supports all CSS color formats, like <code>red</code> or <code>#ff0000</code>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>font-size
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The size of text as a percentage of the default size. For example, <code>150%</code>.
+        </td>
+      </tr>
+    </tbody></table>
+
+    <h4 id="define-api-image-block">Image block</h4>
+    <p>Properties available for the <strong>image</strong> content block.</p>
+    <table class="key-value-table">
+      <tbody><tr>
+        <th style="width: 230px;">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>value
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The URL of the image to insert. We support JPG, PNG, GIF and SVG.
+        </td>
+      </tr>
+    </tbody></table>
+
+    <h4 id="define-api-iframe-block">Iframe block</h4>
+    <p>Properties available for the <strong>iframe</strong> content block.</p>
+    <table class="key-value-table">
+      <tbody><tr>
+        <th style="width: 230px;">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>value
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The HTTPS URL of the web page to embed.
+        </td>
+      </tr>
+    </tbody></table>
+
+    <h4 id="define-api-code-block">Code block</h4>
+    <p>Properties available for the <strong>code</strong> content block.</p>
+    <table class="key-value-table">
+      <tbody><tr>
+        <th style="width: 230px;">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>value
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          Code to syntax highlight.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>language
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The language of the code. We use highlight.js for syntax highlighting, you can see which languages they support at <a href="https://highlightjs.org/static/demo/">highlightjs.org/static/demo</a>.<br><br>
+          If no language is specified, highlight.js will automatically try to determine what language it is.
+        </td>
+      </tr>
+      <tr>
+        <td class="optional">
+          <span class="deem">slides.blocks.</span>word-wrap
+          <div class="meta">
+            <span class="meta-item meta-string">Boolean</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Flags if a code should wrap to new lines. False by default.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>line-numbers
+          <div class="meta">
+            <span class="meta-item meta-string">Boolean|String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Controls line number visibility and code highlights.
+          <table class="key-value-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>true</td>
+              <td>Show line numbers (default).</td>
+            </tr>
+            <tr>
+              <td>false</td>
+              <td>Hide line numbers.</td>
+            </tr>
+            <tr>
+              <td>&lt;string&gt;</td>
+              <td>
+                Comma separated list of lines to highlighted. <code>"1,4-8"</code> will highlight line 1 and 4 through 8.
+                <br><br>
+                You can add multiple highlight steps by using the | delimiter. <code>"1|2-5|6"</code> will highlight line 1, then highlight lines 2 through 5 and finally line 6.
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>theme
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+          </div>
+        </td>
+        <td>
+          The theme to use for syntax highlighting. We support the following themes:
+          <table class="key-value-table code-theme-table">
+            <tbody><tr>
+              <th style="min-width: 130px;">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>monokai</td>
+              <td style="background-color: #272822; color: #f92672;"><code>Monokai (default)</code></td>
+            </tr>
+            <tr>
+              <td>a11y-dark</td>
+              <td style="background-color: #2b2b2b; color: #abe338;"><code>A11y Dark</code></td>
+            </tr>
+            <tr>
+              <td>a11y-light</td>
+              <td style="background-color: #fff; color: #aa5d00;"><code>A11y Light</code></td>
+            </tr>
+            <tr>
+              <td>ascetic</td>
+              <td style="background-color: #fff; color: #000;"><code>Ascetic</code></td>
+            </tr>
+            <tr>
+              <td>darcula</td>
+              <td style="background-color: #2b2b2b; color: #cb7832;"><code>Darcula</code></td>
+            </tr>
+            <tr>
+              <td>far</td>
+              <td style="background-color: #000080; color: #fff;"><code>Far</code></td>
+            </tr>
+            <tr>
+              <td>github-gist</td>
+              <td style="background-color: #fff; color: #a71d5d;"><code>GitHub Gist</code></td>
+            </tr>
+            <tr>
+              <td>ir-black</td>
+              <td style="background-color: #000; color: #96cbfe;"><code>Ir Black</code></td>
+            </tr>
+            <tr>
+              <td>monokai</td>
+              <td style="background-color: #23241f; color: #bf79db;"><code>Monokai</code></td>
+            </tr>
+            <tr>
+              <td>obsidian</td>
+              <td style="background-color: #282b2e; color: #93c763;"><code>Obsidian</code></td>
+            </tr>
+            <tr>
+              <td>seti</td>
+              <td style="background-color: #151718; color: #55b5db;"><code>Seti</code></td>
+            </tr>
+            <tr>
+              <td>solarized-dark</td>
+              <td style="background-color: #002b36; color: #2aa198;"><code>Solarized Dark</code></td>
+            </tr>
+            <tr>
+              <td>solarized-light</td>
+              <td style="background-color: #fdf6e3; color: #268bd2;"><code>Solarized Light</code></td>
+            </tr>
+            <tr>
+              <td>sunburst</td>
+              <td style="background-color: #000; color: #65b042;"><code>Sunburst</code></td>
+            </tr>
+            <tr>
+              <td>tomorrow</td>
+              <td style="background-color: #fff; color: #718c00;"><code>Tomorrow</code></td>
+            </tr>
+            <tr>
+              <td>xcode</td>
+              <td style="background-color: #fff; color: #1c00cf;"><code>Xcode</code></td>
+            </tr>
+            <tr>
+              <td>zenburn</td>
+              <td style="background-color: #3f3f3f; color: #efefaf;"><code>Zenburn</code></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+  </div>
+
+  <h4 id="define-api-table-block">Table block</h4>
+    <p>Properties available for the <strong>table</strong> content block.</p>
+    <table class="key-value-table">
+      <tbody><tr>
+        <th style="width: 230px;">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>data
+          <div class="meta">
+            <span class="meta-item meta-string">Array</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Table data in a multidimensional array. Here's an example data set:
+          <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs json language-json"><span class="hljs-punctuation">[</span>
+<span class="hljs-punctuation">[</span><span class="hljs-string">"A"</span><span class="hljs-punctuation">,</span><span class="hljs-string">"B"</span><span class="hljs-punctuation">,</span><span class="hljs-string">"C"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+<span class="hljs-punctuation">[</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span>  <span class="hljs-number">2</span><span class="hljs-punctuation">,</span>  <span class="hljs-number">3</span> <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">]</span></code></pre>
+        This set will generate two rows, each with three columns. A, B, C, will on the first row and 1, 2, 3 will be on the second.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>html
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Table data in HTML format. For example <code>&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;C&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;</code>. Takes precedence over the <code>data</code> field.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>padding
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Controls the empty spacing around each table cell.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>text-color
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The text color. Supports all CSS color formats, like <code>red</code> or <code>#ff0000</code>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>border-width
+          <div class="meta">
+            <span class="meta-item meta-string">Integer</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          The size of the table border in pixels.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="deem">slides.blocks.</span>border-color
+          <div class="meta">
+            <span class="meta-item meta-string">String</span>
+            <span class="meta-item meta-optional">Optional</span>
+          </div>
+        </td>
+        <td>
+          Color of the table border. Supports all CSS color formats, like <code>red</code> or <code>#ff0000</code>.
+        </td>
+      </tr>
+    </tbody></table>
+  </section></div>
+
+</div>
+    </div>
+    <footer class="global-footer">
+  <div class="global-footer-links">
+    <div class="link-group">
+      <h4>Tour</h4>
+      <a href="https://slides.com/explore">Presentations</a>
+      <a href="https://slides.com/recent">Trending decks</a>
+      <a href="https://slides.com/templates">Templates</a>
+      <a href="https://slides.com/features">Features</a>
+      <a href="https://slides.com/pricing">Pricing</a>
+      <a href="https://slides.com/for-teams">Slides for Teams</a>
+      <a href="https://slides.com/for-developers">Slides for Developers</a>
+    </div>
+
+    <div class="link-group">
+      <h4>Help</h4>
+      <a href="https://help.slides.com" target="_blank" rel="noopener">Forum</a>
+      <a href="https://help.slides.com/knowledgebase" target="_blank" rel="noopener">Knowledge Base</a>
+      <a href="https://slides.com/developers">Developers Docs</a>
+      <a href="https://help.slides.com" data-feedback-mode="smartvote">Leave Feedback</a>
+      <a href="https://help.slides.com" data-feedback-mode="contact">Report an Issue</a>
+    </div>
+
+    <div class="link-group">
+      <h4>Company</h4>
+      <a href="https://slides.com/news">News</a>
+      <a href="https://slides.com/changelog">Changelog</a>
+      <a href="https://slides.com/about">About Slides</a>
+      <a href="https://slides.com/security">Security</a>
+      <a href="https://slides.com/partners">Partners</a>
+    </div>
+
+    <div class="link-group">
+      <h4>How to</h4>
+      <a href="https://slides.com/slides-ai-gpt">Make slides with AI</a>
+      <a href="https://slides.com/embed-google-maps">Embed Google Maps</a>
+      <a href="https://slides.com/embed-google-forms">Embed Google Forms</a>
+      <a href="https://slides.com/embed-youtube">Embed YouTube</a>
+      <a href="https://slides.com/import-pdf">Convert PDF to Slides</a>
+      <a href="https://slides.com/import-ppt">Convert PPT to Slides</a>
+    </div>
+  </div>
+
+  <div class="global-footer-bottom">
+    <div class="social">
+      <a href="https://twitter.com/slides" target="_blank" rel="noopener" class="twitter-link" aria-label="Go to Slides' Twitter profile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32"><path fill="currentColor" d="M33.482 5.964q0 .179-.089.321-1.143 1.857-3.196 3.393v.589q.071 4.054-1.786 8.161-2.393 5.304-7.098 8.295T10.75 29.714q-4.732 0-8.929-2.179-1.143-.589-1.554-.893-.268-.214-.268-.482 0-.232.17-.402t.402-.17q.25 0 .786.045t.804.045q3.643 0 6.696-1.893-1.839-.429-3.232-1.714t-1.982-3.089q-.036-.143-.036-.196 0-.214.161-.384t.393-.17q.089 0 .25.036t.214.036q-1.589-.982-2.536-2.625t-.946-3.5q0-.268.205-.455t.491-.188q.179 0 .625.205t.536.241q-1.643-1.964-1.643-4.571 0-.911.259-1.929t.723-1.696q.179-.286.446-.286.286 0 .482.214 1.357 1.5 1.964 2.054 2.196 1.982 4.929 3.17t5.661 1.438q-.071-.375-.071-.875 0-2.982 2.116-5.098t5.098-2.116q2.911 0 5.036 2.036 1.696-.357 3.732-1.464.143-.089.286-.089.232 0 .402.17t.17.402q0 .429-.5 1.304t-.911 1.357q.125-.036.536-.188t.768-.286.429-.134q.232 0 .402.17t.17.402z"></path></svg>
+      </a>
+      <a href="https://facebook.com/slidesapp" target="_blank" rel="noopener" class="facebook-link" aria-label="Go to Slides' Facebook profile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="32" viewBox="0 0 14 32"><path fill="currentColor" d="M10 7.339q-.875 0-1.107.277t-.232 1.188v1.571h3.875q.286 0 .482.214.196.232.179.518l-.25 3.571q-.036.268-.223.455t-.455.188H8.662v13.714q0 .286-.196.482t-.464.196H3.538q-.286 0-.482-.196t-.196-.482V15.321H.681q-.286 0-.482-.205t-.196-.491v-3.571q0-.286.196-.482t.482-.196H2.86V8.537q0-3.161 1.571-4.705t4.768-1.545q2.143 0 4.018.536.25.071.393.286t.107.464l-.482 3.482q-.036.286-.286.464-.25.161-.536.107-1.357-.286-2.411-.286z"></path></svg>
+      </a>
+    </div>
+    <div class="legal">
+      <a href="https://slides.com/terms">Terms</a>
+      • <a href="https://slides.com/privacy?root=true">Privacy</a>
+      • <span class="copyright">©&nbsp;2023&nbsp;Slides,&nbsp;Inc.</span>
+    </div>
+  </div>
+</footer>
+
+   <!--! end of #container -->
+  
+<script>
+var SLConfig = {};
+</script>
+  <script src="//assets-v2.slid.es/assets/application-2f3a087c1cd59b42e0931ac21f05a05684aa28192a6370212e82494880921c3f.js" defer="defer"></script>
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js"></script>
+
+  <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+accent_color: '#448dd6',
+trigger_color: 'white',
+trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+position: 'automatic'
+}]);
+
+</script>
+
+
+
+</body></html><head>
+  <title>Portfolio Section-Anna Elise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+    <div id="container" class="container">
+      <div id="main" class="main has-page-nav" role="main">
+        <nav class="sl-page-fixed" data-type="scroll">
+          <ul>
+            <li class="selected">
+              <a class="sl-scroll-anchor" href="#">Introduction</a>
+            </li>
+            <li class>
+              <a class="sl-scroll-anchor" href="#">Syntax Highlighted Code</a>
+              <ul>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Line Highlights</a>
+                </li>
+              </ul>
+            </li>
+            <li class>
+              <a class="sl-scroll-anchor" href="#">Developer Mode</a>
+              <ul>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Edit HTMLs</a>
+                </li>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Element Classes</a>
+                </li>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Slide Classes</a>
+                </li>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Export HTML</a>
+                </li>
+              </ul>
+            </li>
+            <li class>
+              <a class="sl-scroll-anchor" href="#">CSS Editor</a>
+            </li>
+            <li class>
+              <a class="sl-scroll-anchor" href="#">Define API: Create Prefilled Decks</a>
+              <ul>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">The Request</a>
+                </li>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Deck JSON Example</a>
+                </li>
+                <li class>
+                  <a class="sl-scroll-anchor" href="#">Deck JSON Spec</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <svg class="sl-page-nav-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#444" stroke-width="2" fill="transparent" stroke-dasharray="1, 0, 21, 484" stroke-linecap="round" stroke-linejoin="round" d="M 20 18 L 20 39 L 20 47 L 20 68 L 20 75 L 40 75 L 40 96 L 40 104 L 20 104 L 20 125 L 20 132 L 40 132 L 40 153 L 40 161 L 40 182 L 40 189 L 40 210 L 40 217 L 40 238 L 40 246 L 20 246 L 20 267 L 20 275 L 20 317 L 20 324 L 40 324 L 40 345 L 40 352 L 40 373 L 40 381 L 40 402" stroke-dashoffset="1" opacity="1"></path>
+          </svg>
+        </nav>
+        <div class="column-wide-l">
+          <section id="intro">
+            <h2>Introduction</h2>
+            <p>
+              " We strive to make Slides a great and flexible tool for developers. Presentations created on Slides are HTML documents under the hood, so generally anything that HTML can do, Slides can do. We make it easy to access and edit the underlying HTML and CSS through the " 
+              <a href="#">Developer Mode</a>
+            </p>
+          </section>
+          <section id="spaceship-interface">
+            <h2>Project 02: Spaceship Interface</h2>
+            <p>
+              "Some words here"
+            </p>
+          </section>
+        </div>
+    </div>
+  </div>
+  <!-- footer section-->
+  <footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/annaelisewong" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+  </body>
+</html>
