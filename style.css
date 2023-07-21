@@ -92,7 +92,7 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 30px;
 }
 
@@ -214,12 +214,4 @@ p, h1, h2, h3, h4, h5, h6 {
 .text {
     font-size: 18px;
     color: #5b85aa;
-}
-
-.contact-form {
-    padding-top: 60px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 5px;
 }
