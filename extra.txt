@@ -131,3 +131,128 @@ window.onscroll = function() {
     transform: translate(-50%, -50%);
     color: mediumslateblue;
 }
+
+
+<!-- services section-->
+        <section id="services">
+            <div class="container">
+                <h1 class="text-center">Services</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-clock"></i>
+                                <h4 class="card-title mt-3">Website Development</h4>
+                                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-layer-group'></i>
+                                <h4 class="card-title mt-3">Website Design</h4>
+                                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+      
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='far servicesIcon fa-check-circle'></i>
+                                <h4 class="card-title mt-3">Website Deployment</h4>
+                                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+      
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-search'></i>
+                                <h4 class="card-title mt-3">SEO</h4>
+                                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+      
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-shield-alt'></i>
+                                <h4 class="card-title mt-3">DevOps</h4>
+                                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+      
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-wrench'></i>
+                                <h4 class="card-title mt-3">QA</h4>
+                                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/annaelisewong" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+ <!-- navbar -->
+    <div class="nav-container">
+        <nav id="navbar">
+            <!--<a class="navbar-brand" href="#">Anna Elise Wong</a>-->
+            <div class="link-container">
+                <a href='#home' class="nav-link">Home</a>
+            </div>
+    
+            <div class="link-container">
+                <a href='#about' class="nav-link">About</a>
+            </div>
+            <div class="link-container">
+                <a href='#services' class="nav-link">Services</a>
+            </div>
+            <div class="link-container">
+                <a href="#projects" class="nav-link">Projects</a>
+            </div>
+            <div class="link-container">
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="link-container">
+                <a href="https://drive.google.com/file/d/1WoBthsqtlIhtSDudCA8nydXuLJVwjdBCeayjGJATwMk/view" target="_blank" class="nav-link">Resume</a>
+            </div>
+        </nav>
+    </div>

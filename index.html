@@ -11,280 +11,228 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    section, header {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        
+        scroll-snap-align: start;
+    }
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: black;">
-    <!-- navbar -->
-    <div class="nav-container">
-        <nav id="navbar">
-            <!--<a class="navbar-brand" href="#">Anna Elise Wong</a>-->
-            <div class="link-container">
-                <a href='#home' class="nav-link">Home</a>
-            </div>
+   
     
-            <div class="link-container">
-                <a href='html/about/about.html' class="nav-link">About</a>
-            </div>
-            <div class="link-container">
-                <a href='html/services/services.html' class="nav-link">Services</a>
-            </div>
-            <div class="link-container">
-                <a href="html/projects/projects.html" class="nav-link">Projects</a>
-            </div>
-            <div class="link-container">
-                <a href="html/contact/contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="link-container">
-                <a href="https://drive.google.com/file/d/1WoBthsqtlIhtSDudCA8nydXuLJVwjdBCeayjGJATwMk/view" target="_blank" class="nav-link">Resume</a>
-            </div>
-        </nav>
-    </div>
 
-    <!-- hero section -->
-    <header class="hero">
-        <article class="hero-inner">
-            <h2 class="hero-title">Hi, I'm Anna Elise</h2>
-            <p class="hero-text">I'm a robotics engineer in San Francisco.</p>
-        </article>
-    </header>
+    <div class="wrapper">
+        <!-- hero section -->
+        <header class="hero">
+            <article class="hero-inner">
+                <h1 class="typewriter" style="font-size: 3.5vw;">Hi, I'm Anna Elise</h2>
+                <!-- <p class="hero-text">I'm a robotics engineer in San Francisco.</p> -->
+            </article>
+        </header>
+        <!-- about section-->
+        <section id="about" style="background-color: black;">
+            <div class="container mt-4">
+                <h1 class="text-center" style="color: #5b85aa;">About Me</h1>
+                <div class="row mt-4">
+                    
+      
+                    <!-- <div class="col-lg-8"> -->
+                        <div class="personal-links" style="text-align: center;">
+                            <span >
+                                <a href="https://github.com/annaw212" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                                    <h4>Github</h4>
+                                </a>
+                                <h4 style="color:#414470; display: inline-block;">&emsp;|&emsp;</h4>
+                                <a href="https://linkedin.com/in/annaelisewong" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                                    <h4>linkedin</h4>
+                                </a>
+                                <h4 style="color:#414470; display: inline-block;">&emsp;|&emsp;</h4>
+                                <a href="mailto: anna.elise781@gmail.com" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                                    <h4>email</h4>
+                                </a>
+                                <h4 style="color:#414470; display: inline-block;">&emsp;|&emsp;</h4>
+                                <a href="https://drive.google.com/file/d/1WoBthsqtlIhtSDudCA8nydXuLJVwjdBCeayjGJATwMk/view" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                                    <h4>resume</h4>
+                                </a>
+                            </span>
+                        </div>
 
-    <!-- about section-->
-    <section id="about" style="background-color: white;">
-        <div class="container mt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/pfp1.png" class= "imageAboutPage" alt="">
-                </div>
-  
-                <div class="col-lg-8">
-                    <p> I am a robotics software engineer living in San Francisco.    
-                    </p>
-                    <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <!-- <div class="col-lg-4" id="hp" style="text-align: left;">
+                            <img src="images/pfp1.png" alt="Image of me." class="imageAboutPage" alt="">
+                        </div> -->
+                        <!-- <p style="color: #5b85aa; float: right;">I am a robotics software engineer living in San Francisco.    
                         </p>
-                    </div>
-                </div>
-            </div>
-    </section>
+                        <div class="row mt-3">
+                            <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>
+                        </div> -->
+                        <div class="about-me-description">
+                            <!-- <div class="image">
+                                <img src="images/pfp1.png" alt="Image of me." class="imageAboutPage">
+                            </div> -->
+                            <div class="text">
+                                <p><b>Occupation:</b>&ensp;Robotics Software Engineer</p>
+                                <p><b>Location:</b>&ensp;San Francisco, California</p>
+                                <p><b>Skills:</b>&ensp;C/C++, Python, Go, C#, Robot Operating System (ROS), motion planning, software development, backend development, mobile robotics</p>
+                                <br>
+                            </div>
+                            <div class="image">
+                                <img src="images/pfp1.png" alt="Image of me." class="imageAboutPage">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>I am a hardworking ____, experience is mostly with backend programming, but I've been learning more about embedded programming. Robotics is my passion because</p>
+                            <p>I am looking for xyz roles because I am looking to xyz</p>
 
-    <!-- portfolio section-->
-    <section id="projects">
-        <div class="container mt-4">
-            <h1 class="text-center">Projects</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/arduino.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Arduino Starter Kit </h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="html/projects/project_content/arduino.html" class="btn btn-success">Link</a>
-                            </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+                <br>
+        </section>
 
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-4 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-  
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
-                        <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
+        <!-- portfolio section-->
+        <section id="projects">
+            <div class="container mt-4">
+                <h1 class="text-center" style="color: #5b85aa">Projects</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <a href="html/projects/project_content/arduino.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img class="card-img-top" src="images/arduino.png" alt="Arduino logo" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color: black; text-transform: capitalize;">Arduino Starter Kit </h4>
+                                <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mt-4">
+                        <a href="https://google.com" style="text-decoration: none;">
+                            <div class="card">
+                                <img class="card-img-top" src="images/scr1.jpg" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color: black; text-transform: capitalize;">Snake Game</h4>
+                                    <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+      
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Product Landing Page</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
                         </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
                     </div>
                 </div>
-  
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Messaging Service</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Submit</button>
+                    </div>
+      
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Twitter Clone</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Blog App</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- contact section-->
+        <section id="contact">
+            <div class="container mt-4 contactContent">
+                <h1 class="text-center" style="color: #5b85aa">Contact Me</h1>
+      
+                <!-- <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+                            <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
+                                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                                </iframe>
+                            </div>
+                            <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                            <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                            </style>
+                        </div>
+                    </div> -->
+      
+                    <div class="contact-form">
+                        <!-- form fields -->
+                        <form>
+                            <input type="text" class="form-control form-control-lg" placeholder="Name">
+                            <input type="email" class="form-control mt-3" placeholder="Email">
+                            <input type="text" class="form-control mt-3" placeholder="Subject">
+                            <div class="mb-3 mt-3">
+                                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-success mt-3">Submit</button>
+                    </div>
+                    <div></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-  
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-  
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </section>
+        
+    </div>
     
-    
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/annaelisewong" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
 
 <!-- load javascript after loading all html content -->
 <script src="script/script.js"></script>
