@@ -1,15 +1,34 @@
-const hamburger = document.querySelector('.hamburger');
-const navLink = document.querySelector('.nav__link');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const dropdownMenu = document.querySelector('.dropdonw-menu');
 
-hamburger.addEventListener('click', () => {
-    navLink.classList.toggle('hide');
+hamburgerIcon.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('show');
 });
 
-$('#btnsubmit').on('click', function(e) {
-    e.preventDefault();
-    sender_name = $('#name').val();
-    sender_email = $('#email').val();
-    subject = $('#subject').val();
-    message = $('#message').val();
-    window.location = "mailto:anna.elise781@gmail.com?subject=" + subject + "&body=" + message;
-});
+function toggleMenu() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
+    dropdownMenu.classList.toggle('show');
+}
+
+
+// // Smooth scrolling for navbar links
+// const navbarLinks = document.querySelectorAll('.nav-link');
+
+// navbarLinks.forEach(link => {
+//   link.addEventListener('click', event => {
+//     event.preventDefault();
+//     const targetId = link.getAttribute('href');
+//     const targetSection = document.querySelector(targetId);
+//     const topOffset = 0; // Adjust this value to offset any fixed header or other elements
+//     const elementPosition = targetSection.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition - topOffset;
+
+//     window.scrollBy({
+//       top: offsetPosition,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
+

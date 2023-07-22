@@ -37,8 +37,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: black;">
-   
-    
+
+    <!-- navbar -->
+    <div class="nav-container">
+        <nav id="navbar">
+            <div class="link-container">
+                <a href='#about' class="nav-link">About</a>
+            </div>
+            <div class="link-container">
+                <a href="#projects" class="nav-link">Projects</a>
+            </div>
+            <div class="link-container">
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <button class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#projects">Projects</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <div class="wrapper">
         <!-- hero section -->
@@ -91,7 +118,7 @@
                                 <img src="images/pfp1.png" alt="Image of me." class="imageAboutPage">
                             </div> -->
                             <div class="text">
-                                <p><b>Occupation:</b>&ensp;Robotics Software Engineer</p>
+                                <p><b>Occupation:</b>&ensp;Software Engineer</p>
                                 <p><b>Location:</b>&ensp;San Francisco, California</p>
                                 <p><b>Skills:</b>&ensp;C/C++, Python, Go, C#, Robot Operating System (ROS), Linux OS, Docker, Bazel, motion planning, software development, back-end development, mobile robotics</p>
                                 <br>
@@ -117,6 +144,7 @@
 
 
         <!-- portfolio section-->
+        <!-- NOTE: IMAGES ARE RATIO 404:316 (CAN BE SCALED UP OR DOWN)-->
         <section id="projects">
             <div class="container mt-4">
                 <h1 class="text-center" style="color: #5b85aa">Projects</h1>
@@ -134,7 +162,7 @@
                     <div class="col-4 mt-4">
                         <a href="html/projects/project_content/arduino.html" style="text-decoration: none;">
                             <div class="card">
-                                <img class="card-img-top" src="images/arduino.png" alt="Arduino logo" style="width:100%">
+                                <img class="card-img-top" src="images/snake_game.PNG" alt="Arduino logo" style="width:100%">
                                 <div class="card-body">
                                     <h4 class="card-title" style="color: black; text-transform: capitalize;">Snake Game</h4>
                                 </div>
@@ -194,7 +222,7 @@
                     <div class="col-lg-6">
                         <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
                             <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
-                                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                                <iframe style="height:50vw; width: 50vw; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
                                 </iframe>
                             </div>
                             <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
@@ -203,16 +231,15 @@
                         </div>
                     </div>
       
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <!-- form fields -->
                         <form>
                             <input type="text" class="form-control mt-3" name="name" placeholder="Name">
                             <input type="email" class="form-control mt-3" name="email" placeholder="Email">
-                            <input type="text" class="form-control mt-3" name="subject" placeholder="Subject">
                             <div class="mb-3 mt-3">
                                 <input type="text" class="form-control pb-5" name="message" placeholder="Message">
                             </div>
-                            <input type="submit" value="Submit" id="btnsubmit">
+                            <!-- <input type="submit" value="Submit" id="btnsubmit"> -->
 
                             <script>
                                 function submitForm()
@@ -220,7 +247,7 @@
                                 document.contact-form.reset();
                             </script>
                         </form>
-                        <!-- <button type="button" class="btn btn-success mt-3">Submit</button> -->
+                        <button type="button" class="btn btn-success mt-3">Submit</button>
                     </div>
                 </div>
             </div>
