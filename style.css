@@ -135,6 +135,14 @@ a {
     text-transform: uppercase;
 }
 
+#about a {
+    font-family: 'Roboto Mono', monospace;
+    color: #5b85aa;
+    font-weight:lighter;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
 /* navbar stuff */
 .nav-container {
     position: fixed; /* Keep the navbar fixed on the screen */
@@ -198,8 +206,25 @@ a {
     display: none;
 }
 
+.about-me-text {
+    font-size: 18px;
+    color: #5b85aa
+}
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+
+    .about-me-text {
+        font-size: 2.0vw;
+        color: #5b85aa;
+    }
+    #about a {
+        font-family: 'Roboto Mono', monospace;
+        color: #5b85aa;
+        font-weight:lighter;
+        font-size: 2.0vw;
+        text-transform: capitalize;
+    }
+
     #navbar a {
         display: none;
     }
@@ -207,33 +232,82 @@ a {
         display: flex;
         align-items: center;
     }
-    .hamburger .hamburger-icon{
+    #menuToggle {
         display: block;
-        background-color: transparent;
-        border: none;
-        margin-right: 15px;
-        cursor: pointer;
-        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
     }
-    .hamburger .hamburger-icon span {
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+    #menuToggle span {
         display: block;
         width: 30px;
         height: 4px;
         margin: 6px auto;
+        position: relative;
+        z-index: 1;
         background-color: #f46036;
+        border-radius: 3px;
+        /* transition: background-color 0.3s ease; */
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    #menu {
+        position: absolute;
+        width: 250px;
+        margin: -100px 0 0 0;
+        padding: 50px;
+        padding-top: 125px;
+        right: -100px;
+
+        background: #000000;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    #menu li a {
+        display: block;
+        padding: 0 0;
+        font-size: 22px;
+        color: #414770;
+        text-align: left;
+        text-decoration: none;
+        text-transform: lowercase;
         transition: background-color 0.3s ease;
     }
-    /* Rotate and transition the lines to create the X icon effect */
-    .hamburger.show .hamburger-icon span:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
+    #menu li:hover a {
+        text-decoration: underline;
     }
-    .hamburger.show .hamburger-icon span:nth-child(2) {
-        opacity: 0;
+    #menuToggle input:checked ~ ul
+    {
+        transform: none;
+        opacity: 1;
     }
-    .hamburger.show .hamburger-icon span:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-    /* .hamburger .dropdown-menu {
+    .hamburger .dropdown-menu {
         display: none;
         position: absolute;
         right: 0;
@@ -241,33 +315,6 @@ a {
     }
     .hamburger.show .dropdown-menu {
         display: block;
-    } */
-    .dropdown-menu {
-        display: block;
-        position: absolute;
-        top: 55px;
-        right: 0;
-        background-color: #f0f0f0;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-    }
-    .dropdown-menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    .dropdown-menu ul li {
-        margin: 10px;
-    }
-    .dropdown-menu ul li a {
-        color: #333;
-        text-decoration: none;
-        display: block;
-        transition: background-color 0.3s ease;
-    }
-    .dropdown-menu ul li a:hover {
-        background-color: #ddd;
     }
 }
 
@@ -289,7 +336,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .about-me-description {
-    padding-top: 60px;
+    padding-top: 50px;
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
@@ -299,4 +346,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .text {
     font-size: 18px;
     color: #5b85aa;
+}
+
+#contact #submit-button {
+    background-color: #3a833a;
+    color: #ffffff;
+    padding: 7px 12px 7px 12px;
+    border: none;
+    border-radius: 3px;
 }

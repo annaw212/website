@@ -51,13 +51,18 @@
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger">
-                <button class="hamburger-icon" onclick="toggleMenu()">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-                <div class="dropdown-menu">
-                    <ul>
+                <div id="menuToggle">
+                    <!-- A fake checkbox used as the click receiver -->
+                    <input type="checkbox" />
+
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!-- Menu options -->
+                    <ul id="menu">
+                      <!-- <li>About</li> -->
                       <li><a href="#about">About</a></li>
                       <li><a href="#projects">Projects</a></li>
                       <li><a href="#contact">Contact</a></li>
@@ -114,27 +119,26 @@
                             </p>
                         </div> -->
                         <div class="about-me-description">
-                            <!-- <div class="image">
-                                <img src="images/pfp1.png" alt="Image of me." class="imageAboutPage">
-                            </div> -->
-                            <div class="text">
+                            <div class="about-me-text">
                                 <p><b>Occupation:</b>&ensp;Software Engineer</p>
                                 <p><b>Location:</b>&ensp;San Francisco, California</p>
-                                <p><b>Skills:</b>&ensp;C/C++, Python, Go, C#, Robot Operating System (ROS), Linux OS, Docker, Bazel, motion planning, software development, back-end development, mobile robotics</p>
+                                <p><b>Skills:</b>&ensp;C/C++, Python, Go, HTML/CSS, Javascript, Robot Operating System (ROS), Linux OS, Docker, Bazel, motion planning, software development, back-end development, mobile robotics</p>
                                 <br>
                             </div>
                             <div class="image">
                                 <img src="images/pfp1.png" alt="Image of me." class="imageAboutPage">
                             </div>
                         </div>
-                        <div class="text">
-                            <p>I am a hardworking ____, experience is mostly with back-end programming, but I've been learning more about embedded programming. Robotics is my passion because</p>
-                            <p>I am looking for xyz roles because I am looking to xyz</p>
-                            <p>Interested in robotics and human robot/computer interaction, primarily anthropomorphism and path planning</p>
-                            <p>Interested in learning more about front-end development and data processing</p>
-                            <br>
-                            <p>Outdoors, rock climbing, hiking, camping, reading, crocheting/crafting, concert-going.</p>
-
+                        <div class="about-me-text">
+                            <p>I am a robotics software engineer with a foundation in back-end programming, and my driving passion lies in making the world more accessible through the use of robots.</p>
+                            <p>Two additional realms I find fascinating and relevent are human-robot/computer interaction and UX design. 
+                                In my capacity as a software engineer, my primary focus has been on back-end facets of the design process, meaning 
+                                designing applications with an emphasis on logic and efficiency, and prioritizing technical considerations over user experience.
+                                However, I believe much of accessibility begins with good design, and I am excited to learn more about HRI and UX to further my
+                                understanding of how robotics can alter the world for the better.</p>
+                            <!-- <p>Other topics I am interested in learning more about are embedded programming and the world of hardware.</p> -->
+                            <p>Outside of work, I enjoy exploring the outdoors, rock climbing, hiking, camping, reading, crocheting/crafting, and concert-going.</p>
+                            <p><b>Check out my recent publication: </b><a href="https://dl.acm.org/doi/10.1145/3563657.3596058" target="_blank">Creating Design Resources to Scaffold the Ideation of AI Concepts</a></p>
                         </div>
                     <!-- </div> -->
                 </div>
@@ -233,21 +237,16 @@
       
                     <div class="col-lg-5">
                         <!-- form fields -->
-                        <form>
+
+                        <!-- <form action="/something_here" method="POST (or get)"-->
+                        <form action="mailto:anna.elise781@gmail.com" method="post" enctype="text/plain">
                             <input type="text" class="form-control mt-3" name="name" placeholder="Name">
                             <input type="email" class="form-control mt-3" name="email" placeholder="Email">
                             <div class="mb-3 mt-3">
                                 <input type="text" class="form-control pb-5" name="message" placeholder="Message">
                             </div>
-                            <!-- <input type="submit" value="Submit" id="btnsubmit"> -->
-
-                            <script>
-                                function submitForm()
-                                document.contact-form.submit();
-                                document.contact-form.reset();
-                            </script>
+                            <input id="submit-button" type="submit" value="Submit">
                         </form>
-                        <button type="button" class="btn btn-success mt-3">Submit</button>
                     </div>
                 </div>
             </div>
