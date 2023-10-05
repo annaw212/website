@@ -1,10 +1,3 @@
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const dropdownMenu = document.querySelector('.dropdonw-menu');
-
-hamburgerIcon.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('show');
-});
-
 function toggleMenu() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
     const navbar = document.getElementById('navbar');

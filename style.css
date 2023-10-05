@@ -143,6 +143,14 @@ a {
     text-transform: capitalize;
 }
 
+#courses a {
+    font-family: 'Roboto Mono', monospace;
+    color: #5b85aa;
+    font-weight:lighter;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
 /* navbar stuff */
 .nav-container {
     position: fixed; /* Keep the navbar fixed on the screen */
@@ -170,9 +178,6 @@ a {
     padding: 10px 15px;
 }
 
-/* #navbar .link-container:last-child a {
-    padding-right: 20px;
-} */
 
 #navbar > * {
     padding: 1rem;
