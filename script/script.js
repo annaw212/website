@@ -6,6 +6,8 @@ function toggleMenu() {
 }
 
 
+
+
 // // Smooth scrolling for navbar links
 // const navbarLinks = document.querySelectorAll('.nav-link');
 

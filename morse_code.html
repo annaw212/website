@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Anna Elise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    section, header {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        
+        scroll-snap-align: start;
+    }
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+
+    <!-- navbar -->
+    <div class="nav-container">
+        <nav id="navbar">
+            <!-- <div class="link-container">
+                <a href='#about' class="nav-link">About</a>
+            </div> -->
+            <div class="link-container">
+                <a href="index.html#projects" class="nav-link">&#8592 Back to Projects</a>
+            </div>
+            <!-- <div class="link-container">
+                <a href="#contact" class="nav-link">Contact</a>
+            </div> -->
+            <div class="hamburger">
+                <div id="menuToggle">
+                    <!-- A fake checkbox used as the click receiver -->
+                    <input type="checkbox" />
+
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!-- Menu options -->
+                    <ul id="menu">
+                      <!-- <li>About</li> -->
+                      <!-- <li><a href="index.html#about">About</a></li> -->
+                      <li><a href="index.html#projects">back to projects</a></li>
+                      <!-- <li><a href="index.html#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+
+        <section id="morse-code" style="background-color: black;">
+            <div class="container mt-4">
+                <h1 class="text-center" style="color: #5b85aa;">Morse Code Arduino Project</h1>
+                <div class="row mt-4">
+                    
+      
+                    <!-- <div class="col-lg-8"> -->
+                        <div class="personal-links" style="text-align: center;">
+                            <span >
+                                <a href="https://github.com/annaw212/morse-code/blob/main/morse_code.ino" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                                    <h4>link to code</h4>
+                                </a>
+                            </span>
+                        </div>
+
+                        <div class="about-me-description">
+                            <div class="about-me-text">
+                                <p><b>Included Parts:</b></p>
+                                <ul>
+                                    <li>Arduino Uno Rev3</li>
+                                    <li>2 button switches</li>
+                                    <li>3- 220 &#8486 resistors</li>
+                                    <li>LCD display (TC1602A-01T)</li>
+                                    <li>LED</li>
+                                </ul>
+                                <br>
+                            </div>
+                            <div class="image">
+                                <img src="images/morse_code_arduino_project.jpg" alt="Image of morse code arduino project." class="imageAboutPage">
+                            </div>
+                            <div class="image">
+                                <img src="images/morse_code_circuit.png" alt="Circuit." class="imageAboutPage">
+                            </div>
+                        </div>
+                        <div class="about-me-text">
+                            <p>The idea for this project came from an old school project I did that involved morse code inputs,
+                                and a project in the Arduino Starter Kit projects book for displaying magic 8 ball responses on
+                                an LCD screen.
+                            </p>
+                            <p>The user can display messages translated from morse code inputs by holding down the transmission button (leftmost button) and 
+                                entering dots and dashes via the input button (rightmost button). The letters are displayed to the user via the LCD screen, 
+                                and via the serial monitor in the Arduino IDE.
+                            </p>
+                            <p>For the sake of making the morse code input easier to use for someone who is not familiar with the morse code
+                                alphanumeric codes (such as myself), I have slowed down the input times such as follows:
+                            </p>
+
+                            <table style="border: 1px solid #414470; border-collapse: collapse;">
+                                <tr style="border: 1px solid #414470; border-collapse: collapse;">
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;dot ('.')</td>
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;5ms - 400ms input button press</td>
+                                </tr>
+                                <tr style="border: 1px solid #414470; border-collapse: collapse;">
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;dash ('-')</td>
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;400+ ms input button press</td>
+                                </tr>
+                                <tr style="border: 1px solid #414470; border-collapse: collapse;">
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;completed letter</td>
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;1500 - 3000ms, input button not pressed</td>
+                                </tr>
+                                <tr style="border: 1px solid #414470; border-collapse: collapse;">
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;completed word (' ')&ensp;</td>
+                                    <td style="border: 1px solid #414470; border-collapse: collapse;">&ensp;3000+ ms, input button not pressed</td>
+                                </tr>
+                            </table>
+                            <!-- <ul>
+                                <li>dot ('.'): 5ms - 400ms input button press length</li>
+                                <li>dash ('-'): 400+ ms input button press length</li>
+                                <li>completed letter: 1500-3000 ms time between input button presses</li>
+                                <li>completed word (' '): 3000+ ms time between input button presses</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                <br>
+        </section>
+
+        
+    </div>
+    
+
+<!-- load javascript after loading all html content -->
+<script src="script/script.js"></script>
+</html>
