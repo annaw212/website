@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Snake Game Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    section, header {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        
+        scroll-snap-align: start;
+    }
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+
+    <!-- navbar -->
+    <div class="nav-container">
+        <nav id="navbar">
+            <div class="link-container">
+                <a href="index.html#projects" class="nav-link">&#8592 Back to Projects</a>
+            </div>
+            <div class="hamburger">
+                <div id="menuToggle">
+                    <!-- A fake checkbox used as the click receiver -->
+                    <input type="checkbox" />
+
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!-- Menu options -->
+                    <ul id="menu">
+                      <li><a href="index.html#projects">back to projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+
+        <section id="snake-game" style="background-color: black;">
+          <div class="container mt-4">
+            <h1 class="text-center" style="color: #5b85aa;">Snake Game</h1>
+            <div class="row mt-4">
+              <div class="personal-links" style="text-align: center;">
+                <span >
+                  <a href="https://github.com/annaw212/snake_game_cpp" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                    <h4>link to C++ code</h4>
+                  </a>
+                  <h4 style="color:#414470; display: inline-block;">&emsp;|&emsp;</h4>
+                  <a href="https://github.com/annaw212/snake_game_cs" style="text-decoration: none; color: #414470; text-transform: lowercase; display: inline-block;" target="_blank">
+                    <h4>link to C# code</h4>
+                  </a>
+                </span>
+              </div>
+
+              <div class="about-me-text">
+                <br>
+                <p>The idea for this project came from an interest in learning C# and building a game, which is not something I had done before.
+                  The two versions of the game I created were C++ and C#. The C# language allows for developing a game with better graphics,
+                  whereas with C++ I was limited to creating a game that ran in the terminal and is quite limited graphically.
+                </p>
+                <div class="snake-description">
+                  <div class="about-me-text">
+                    <h4>C++ Version</h4>
+                    <p><b>How to Play:</b></p>
+                    <p>Run the game's executable using the command <code style="color: #f46036">./snake_game</code></p>
+                    <ul>
+                      <li>Use the arrow keys or WASD to move the snake in the respective direction.</li>
+                      <li>Food is depicted as <code style="color: #f46036">*</code>.</li>
+                      <li>The snake's head is depicted as <code style="color: #f46036">O</code>, and its body
+                      is depicted using <code style="color: #f46036">o</code> for the length of the snake.</li>
+                      <li>The borders are depicted using <code style="color: #f46036">#</code>.</li>
+                    </ul>
+                    <p>The game will continue to run until the user chooses to quit the game using the 
+                      <code style="color: #f46036">q</code> key, or runs into the wall, after which
+                      the user's final score will be displayed in the terminal.
+                    </p>
+                  </div>
+                  <div class="image">
+                    <img src="images/cpp_snake_game.png" alt="C++ snake game terminal interface." class="imageAboutPage">
+                  </div>
+                </div>
+                <div class="snake-description">
+                  <div class="about-me-text">
+                    <h4>C# Version</h4>
+                    <p><b>How to Play:</b></p>
+                    <p>(Note: As far as I know, this game needs to be run using Visual Studio
+                      (NOT Visual Studio Code))
+                    </p>
+                    <p>Once opened, there will be a button at the top of the software with a green
+                      triangle next to the name of the project. The solid green arrow will debug the 
+                      code before running, and the green outline triangle will run the code normally.</p>
+                    <ul>
+                      <li>The game's UI should open, displaying "Press any key to play."</li>
+                      <li>Once a key is pressed, a countdown will begin, after which the snake will begin.</li>
+                      <li>Use the arrow keys to control the snake's direction.</li>
+                      <li>The game will continue until the snake runs into itself or a wall.</li>
+                      <li>To grow the snake, eat the food (red circles) on the grid.</li>
+                      <li>To pause the game, press the <code style="color: #f46036">SPACE</code> bar</li>
+                      <li>To quit the game, press the <code style="color: #f46036">q</code> key</li>
+                    </ul>
+                  </div> 
+                  <div class="image">
+                    <img src="images/snake_game.PNG" alt="C# snake game GUI." class="imageAboutPage">
+                  </div>
+                </div>
+              </div>   
+            </div>
+          </div>
+    </div>
+    
+
+<!-- load javascript after loading all html content -->
+<script src="script/script.js"></script>
+</html>
